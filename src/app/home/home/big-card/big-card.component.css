@@ -1,0 +1,12 @@
+.bc{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+}
+.items{
+    display: flex;
+}
+mat-card{
+    margin-right: 1%;
+    margin-left: 1%;
+}

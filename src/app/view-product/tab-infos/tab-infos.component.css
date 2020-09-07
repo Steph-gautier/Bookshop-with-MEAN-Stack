@@ -1,0 +1,83 @@
+h1,h2,h3,h5,h6{
+    font-weight: 400;
+}
+.tab-infos{
+    text-decoration-style: unset;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    border-bottom:1px solid #cdcdcd;
+}
+.buy{
+    background-color: #ff8c09;
+    color:white;
+    margin-left: 45%;
+}
+.paragraph{
+    text-indent: 50px;
+    font-size: 16px;
+    margin-top: 0.7rem;
+}
+.gold{
+    color: rgb(252, 185, 16);
+}
+
+/*TabsReview*/
+.blocka{
+    display: inline-flex;
+}
+.cella{
+    width:60%;
+}
+.cella1{
+    display: inline-flex;
+}
+.box_total{
+    margin-top: 1rem;
+    width:8.3rem;
+    height: 8.3rem;
+    text-align: center;
+}
+.review_box{
+    width:17rem;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+}
+.small-icons>.material-icons{
+    font-size: 12px;
+}
+.big{
+    font-size: 38px;
+}
+.rmk{
+    font-size: 13px;
+    font-style: italic;
+}
+.media{
+    display: inline-flex;
+}
+.avatar {
+    margin-top: 1em;
+    background-image: url('../../../assets/img/user.png');
+    background-size: cover;
+  }
+.review_list{
+    margin-top: 4rem;
+}  
+.top{
+    margin-top:-1em;
+    font-size:16px;
+}
+.padding{
+    text-indent: 22px;
+}

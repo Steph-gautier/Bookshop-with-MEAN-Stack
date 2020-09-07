@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h2>Checkout</h2><hr/>
+    <div class="payment">
+        <div class="order">
+          <mat-card>
+              <div *ngIf="!paidFor">
+                  <h1>Buy this article now!</h1>
+                  <h2>{{ product.price}}</h2>
+                  <p>{{ product.description}}</p>
+                  <div>
+                    <b>Your Order</b><hr/>
+                    <table mat-table [dataSource]="transactions" multiTemplateDataRows class="mat-elevation-z8" style="width: 100%;">
+                        <!-- Item Column -->
+                        <ng-container matColumnDef="item">
+                          <th mat-header-cell *matHeaderCellDef> Item(s) </th>
+                          <td mat-cell *matCellDef="let transaction"> {{transaction.item}} </td>
+                          <td mat-footer-cell *matFooterCellDef> Total </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="expandedDetail">
+                            <td mat-cell *matCellDef="let transaction" [attr.colspan]="displayedColumns.length">
+                              <div class="example-element-detail"
+                                   [@detailExpand]="transaction == expandedElement ? 'expanded' : 'collapsed'">
+                                <div class="example-element-diagram">
+                                  <div class="example-element-symbol"> <img src="../../assets/img/book7.jpg" width="100px" style="position: relative;top:-12px;left: -10px;"> </div>
+                                  <div class="example-element-name"> {{transaction.name}} </div>
+                                  <div class="example-element-weight"> {{transaction.weight}} </div>
+                                </div>
+                                <div class="example-element-description">
+                                  {{transaction.description}}
+                                </div>
+                              </div>
+                            </td>
+                          </ng-container>
+                      
+                        <!-- Quantity Column -->
+                        <ng-container matColumnDef="quantity">
+                            <th mat-header-cell *matHeaderCellDef> Quantity </th>
+                            <td mat-cell *matCellDef="let transaction"> {{transaction.quantity}} </td>
+                            <td mat-footer-cell *matFooterCellDef>{{getTotalQuantity()}}  </td>
+                          </ng-container>
+                        <!-- Cost Column -->
+                        <ng-container matColumnDef="cost">
+                          <th mat-header-cell *matHeaderCellDef> Cost </th>
+                          <td mat-cell *matCellDef="let transaction"> {{transaction.cost | currency}} </td>
+                          <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td>
+                        </ng-container>
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let transaction; columns: displayedColumns;"  class="example-element-row" [class.example-expanded-row]="expandedElement === transaction"
+                        (click)="expandedElement = expandedElement === transaction ? null : transaction"></tr>
+                        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+                        <tr mat-footer-row *matFooterRowDef="displayedColumns" style="font-weight:700;"></tr>
+                      </table>
+                     </div>
+                      
+                </div><br/>
+
+            <div #paypal class="payment-options"></div>
+          </mat-card>  
+        </div>
+        <div class="other">
+              <div *ngIf="paidFor">
+                <h1>Yay, Congrats transaction succeed!</h1>
+              </div>
+              <related-items></related-items>
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>

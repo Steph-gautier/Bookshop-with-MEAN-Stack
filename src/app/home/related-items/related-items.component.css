@@ -1,0 +1,20 @@
+
+.title{
+    background-color: black;
+    font-size:20px;
+    font-weight: 700;
+    color:white;
+    position:relative;
+    top:-15px;
+    left: -16px;
+    width: 107%;
+    padding:7px;
+    text-align: center;
+}
+
+.detail{
+    display: inline-block;
+    position: relative;
+    top:-1rem;
+    text-align:center;
+}

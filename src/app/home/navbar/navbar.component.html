@@ -1,0 +1,46 @@
+<mat-toolbar >
+      <mat-toolbar-row class="gray bottom">
+        <marquee>Hot sales! Up to 60% off</marquee>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="black"> 
+        <a routerLink="view" style="margin-left: 8%;"><img src="../../assets/img/logo.png" style="width:200px;"/> </a>     
+        <div class="app-title">
+          <b>Book Store</b> <img src="../../../assets/img/bookstore.png" style="width:120px;margin-left: 5%;"/>
+        </div>      
+        <div class="right_part">
+                  <span class="rubrik"><button mat-button [matMenuTriggerFor]="belowMenu" class="sp-bt" mat-button><div class="top"><span class="material-icons" >person</span></div>Account</button>
+                  <mat-menu #belowMenu="matMenu" yPosition="below">
+                    <button mat-menu-item (click)="register()"><mat-icon>how_to_reg</mat-icon>Login/Register</button>
+                    <button mat-menu-item><mat-icon>directions_boat</mat-icon>Orders</button>
+                    <button mat-menu-item><mat-icon>favorite</mat-icon>Wishlist</button>
+                  </mat-menu>
+                  </span>
+                  <span class="rubrik"><button [matMenuTriggerFor]="afterMenu" class="sp-bt" mat-button><div class="top"><span class="material-icons">message</span></div>Messages</button>
+                  <mat-menu #afterMenu="matMenu" xPosition="before">
+                    <button mat-menu-item><mat-icon>all_inbox</mat-icon>Inbox (0/0)</button>
+                    <button mat-menu-item><mat-icon>move_to_inbox</mat-icon>Sent (0/0)</button>
+                  </mat-menu></span>
+                  <span class="rubrik"><button [matMenuTriggerFor]="beforeMenu" class="sp-bt" mat-button><div class="top"><span class="material-icons">headset_mic</span></div>Help</button>
+                  <mat-menu #beforeMenu="matMenu" xPosition="before">
+                      <button mat-menu-item><mat-icon>policy</mat-icon>Privacy and conditions</button>
+                      <button mat-menu-item><mat-icon>style</mat-icon>Order now by calling us</button>
+                    </mat-menu></span>
+                  <span class="rubrik cart"><a routerLink="../cart" class="sp-bt" mat-button ><div class="top"><mat-icon matBadge="{{cartItemCount}}" matBadgeColor="warn">shopping_cart</mat-icon></div>Cart</a></span>
+              </div>             
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sop">
+          <div class="search">
+              <mat-select  placeholder="Category" >
+                <mat-option value="Books">Books</mat-option>
+                <mat-option value="Bags">Bags</mat-option>
+                <mat-option value="other">Other products</mat-option>
+              </mat-select>
+        <mat-form-field appearance="outline" class="sff">
+          <input class="search-field" matInput placeholder="Search a book or any product here...">
+              <mat-icon matPrefix style="font-size: 35px;">search</mat-icon>
+        </mat-form-field> 
+        <button mat-button  class="search-btn">SEARCH</button>
+      </div>
+      </mat-toolbar-row>
+      
+</mat-toolbar>

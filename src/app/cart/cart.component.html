@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<button mat-raised-button color="accent" (click)="clearAll()">Clear cart</button>
+<div class="container">
+    <h3>My Cart <mat-icon>shopping_cart</mat-icon></h3><hr/>
+    <div>
+        <app-cart-item *ngFor="let item of insideCart" [product]="item"></app-cart-item>
+    </div>    
+    <mat-card>
+        <button mat-raised-button color="warn">Proceed Checkout</button>
+    </mat-card>
+</div>
+<app-footer></app-footer>
+

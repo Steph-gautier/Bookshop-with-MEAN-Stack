@@ -1,0 +1,25 @@
+.inline{
+    display: inline-flex;
+    padding:1%;
+}
+
+.selfItem{
+    display: flex;
+    align-items: center;
+}
+.icon-btn{
+    background-color:darkorange;
+    color:white;
+}
+.item-styling{
+    height: 100px;
+}
+.no-padding{
+    padding: 0px;
+}
+.char{
+    border-right: 1px solid rgb(201, 197, 197);
+    margin-left: 0.67rem;
+    padding-right: 0.3rem;
+}
+

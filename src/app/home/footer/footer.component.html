@@ -1,0 +1,65 @@
+<div class="footer">
+    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()">
+    <mat-card style="display: flex;align-items: center;">
+       <mat-icon class="graphics1">send</mat-icon> 
+       <mat-form-field appearance="outline" style="width: 60%;z-index: 99;margin-left: 10%;"> 
+        <input type="email" formControlName="userEmail" style="padding-left: 3%; padding-bottom: 1%; font-size: 17px;" matInput placeholder="Drop your email address here for keeping you inform...">
+        <mat-icon matPrefix style="font-size: 30px;">mail</mat-icon>
+        <!--<mat-hint *ngIf="isSubmitted && subs.userEmail.errors">
+                <mat-error *ngIf="subs.userEmail.errors.required">Email is required</mat-error>
+                <mat-error *ngIf="subs.email.errors.email">Email must be a valid address like xxxx@yyy.zzz</mat-error>
+             </mat-hint>-->
+    </mat-form-field>
+        <button  mat-button  class="subscribe-btn" type="submit">Subscribe Now!</button> 
+    </mat-card>
+</form>
+    <mat-grid-list cols="4" rowHeight="1:1">
+        <mat-grid-tile class="block">
+        <div>
+            <h3><b>MYEAZYSCHOOL</b></h3>
+                myeazyschool delivers quality online courses across various fields including academic,
+                professional and soft skills. Take lectures using your smartphones, tablets, PCs or
+                myeazyschool-Pad.
+        </div>       
+        </mat-grid-tile>
+        <mat-grid-tile>
+        <div>  
+            <h3><b> SUB-SECTIONS</b></h3>
+            <ul>
+                <li>Anglophone</li>
+                <li>Francophone</li>
+                <li>Diploma Examinations</li>
+                <li>Others</li>
+            </ul>
+        </div>  
+    </mat-grid-tile>
+        <mat-grid-tile>
+        <div>  
+            <h3><b>USEFUL LINKS</b></h3>
+            <ul>
+                <li>myeazyschool shop</li>
+                <li>Become a Partner</li>
+                <li>About Us</li>
+                <li>Privacy Terms</li>
+            </ul>
+        </div> 
+    </mat-grid-tile>
+        <mat-grid-tile>
+        <div>   
+            <h3><b>CONTACT</b></h3>
+            <ul>
+                <li>malingo Buea, Cameroon</li>
+                <li>info@myeazyschool.com</li>
+                <li>+ (237) 676541667</li>
+                <li>+ (237) 658557976</li>
+            </ul>
+        </div> 
+        </mat-grid-tile>
+    </mat-grid-list>
+    <hr/>
+    <p style="padding-bottom: 5%;"> © 2019 Copyright: <strong style="color:rgb(254, 126, 7) !important;"> Grace Publishers and Tech</strong></p>
+    <mat-icon>facebook-box</mat-icon>
+    <mat-icon>twitter</mat-icon>
+    <mat-icon>google-plus</mat-icon>
+    <mat-icon>linkedin-box</mat-icon>
+</div>                

@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<div class="dtitle">
+    Details about this product
+    <hr/>
+</div>    
+ <div class="item">
+            <div class="viewP vertical-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="30%">
+    
+                    <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+                    <swiper *ngIf="type == 'component' && show" class="swiper-container" fxFlex="auto" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                    <div *ngFor="let slide of slides" class="swiper-slide">
+                        <div class="img-slider" fxLayout="column" fxLayoutAlign="center center" fxFlexFill [ngStyle]="{background: 'url(../../assets/img/' + slide.url + ')'}">
+
+                        </div>
+                    </div>
+                    </swiper>
+                
+                    <div *ngIf="type == 'directive' && show" class="swiper-container" [disabled]="disabled" [swiper]="config" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                    <div class="swiper-wrapper">
+                        <div *ngFor="let slide of slides" class="swiper-slide">
+                        <div class="img-slider" fxLayout="column" fxLayoutAlign="center center" fxFlexFill [ngStyle]="{background: 'url(../../assets/img/' + slide.url + ')'}">
+
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-scrollbar" [hidden]="config.scrollbar === false"></div>
+                    <div class="swiper-pagination" [hidden]="config.pagination === false"></div>
+                
+                    <div class="swiper-button-prev" [hidden]="config.navigation === false"></div>
+                    <div class="swiper-button-next" [hidden]="config.navigation === false"></div>
+                    </div>
+                </div>
+                <mat-card class="stars">
+                    <span class="material-icons gold">star</span>
+                    <span class="material-icons gold">star</span>
+                    <span class="material-icons gold">star</span>
+                    <span class="material-icons gold">star</span>
+                    <span class="material-icons gold">star_half</span>
+                </mat-card>
+        </div>
+    <div class="description">
+<h2>PHYSICS FOR ADVANCED LEVEL</h2>
+            <p>Number of pages: <b>641</b></p>
+            <p>Price: <b>11 500 FCFA</b></p>
+    
+                <p>Category: <b>Books</b></p>
+                <p>Availability: <b>366/500</b></p>
+            
+            <br/><hr/>
+            <p>This book aims to be single most useful ressource on learning angular.By the time, you are done reading this book, you and your team will have everything you need to build reliable and powerfull angular Apps.</p>
+             <mat-slider
+                thumbLabel
+                tickInterval="366"
+                step="1"
+                min="1"
+                max="366"
+                (input)="someValue = $event.value" 
+                [value]="someValue"class="slider"></mat-slider><br/>
+             <p class="ctext">Quantity: {{ someValue }}<br/></p>
+            <br/>
+            <button mat-raised-button class="buy">Buy Now!</button>
+            <button mat-stroked-button class="add">Add to Cart</button>       
+    </div>
+</div>
+<div class="tab-infos">
+        <app-tab-infos></app-tab-infos>
+</div>
+<br/>
+<br/>
+<app-footer></app-footer>
+
+

@@ -1,0 +1,31 @@
+.footer{
+    padding-left: 10%;
+    padding-right: 10%;
+    color:rgb(83, 83, 83);
+}
+.subscribe-btn{
+    font-weight: bolder;
+    height: 90%;
+    width: 9.3rem;
+    font-size: 18px;
+    border:0px;
+    border-color: none;
+    border-radius:5px;
+    background-color: #fe7e07;
+    color:white;
+    padding:8px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    top:-9px;
+}
+.graphics1{
+    color:rgb(254, 126, 7);
+    z-index:0;
+    position:relative;
+    font-size: 115px;
+    transform: rotate(-45deg);
+}
+ul{
+    list-style: none;
+}

@@ -1,0 +1,11 @@
+.full-width{
+    width: 100%;
+    display: block;
+}
+.btn-primary{
+    background-color: #ffb52c;
+    color:white;
+}
+.ctr{
+    margin-left: 37%;
+}

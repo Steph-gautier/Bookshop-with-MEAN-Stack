@@ -1,0 +1,19 @@
+.recomand{
+    background-color: transparent;
+    display: flex;
+    margin-left: 3.7rem;
+}
+app-item{
+    margin-right: 1%;
+    margin-bottom: 3%;
+}
+.banner{
+    background-image: url(../../../assets/img/banner.png);
+    height: 810px;
+    background-size: cover;
+    width:19%;
+    margin-left: 5%;
+}
+.row{
+    display: flex;
+}

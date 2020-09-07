@@ -1,0 +1,121 @@
+<div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+    <mat-card class="t"> <h3>FRANCOPHONE SUB-SYSTEM</h3> <div class="bar"></div></mat-card>
+  <mat-card class="it"><swiper *ngIf="type == 'component' && show" class="swiper-container" fxFlex="auto" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+          <div *ngFor="let slide of slides" class="swiper-slide">
+         <mat-card class="item mat-elevation-z8">   
+            <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                  <img class="img-item" mat-card-image src="../../assets/img/second.png" alt="Photo of this book">
+                  <mat-card-content class="subtitle-item">
+                    <p>
+                      Special book
+                    </p>
+                    <b>$26.3</b><br/>
+                    <div class="stars">
+                    </div>
+                  </mat-card-content>  
+            </div>
+        </mat-card>  
+          </div>
+        </swiper></mat-card>
+
+        <div *ngIf="type == 'directive' && show" class="swiper-container" [disabled]="disabled" [swiper]="config" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+          <div class="swiper-wrapper">
+            <div *ngFor="let slide of slides" class="swiper-slide">
+             <mat-card class="item">   
+              <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                {{slide}}
+              </div>
+              </mat-card>
+            </div>
+          </div>
+
+          <div class="swiper-scrollbar" [hidden]="config.scrollbar === false"></div>
+          <div class="swiper-pagination" [hidden]="config.pagination === false"></div>
+
+          <div class="swiper-button-prev" [hidden]="config.navigation === false"></div>
+          <div class="swiper-button-next" [hidden]="config.navigation === false"></div>
+        </div>
+</div>
+<big-card></big-card>
+      <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+          <mat-card class="t"> <h3>ANGLOPHONE SUB-SYSTEM</h3> <div class="bar"></div></mat-card>      
+        <mat-card class="it"><swiper *ngIf="type == 'component' && show" class="swiper-container" fxFlex="auto" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                <div *ngFor="let slide of slides" class="swiper-slide">
+               <mat-card class="item mat-elevation-z4">   
+                  <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                        <img class="img-item" mat-card-image src="../../assets/img/second.png" alt="Photo of this book">
+                        <mat-card-content class="subtitle-item">
+                          <p>
+                            Special book
+                          </p>
+                          <b>$26.3</b><br/>
+                          <div class="stars">
+                          </div>
+                        </mat-card-content>  
+                  </div>
+              </mat-card>  
+                </div>
+              </swiper>
+            </mat-card>
+              <div *ngIf="type == 'directive' && show" class="swiper-container" [disabled]="disabled" [swiper]="config" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                <div class="swiper-wrapper">
+                  <div *ngFor="let slide of slides" class="swiper-slide">
+                   <mat-card class="item">   
+                    <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                      {{slide}}
+                    </div>
+                    </mat-card>
+                  </div>
+                </div>
+      
+                <div class="swiper-scrollbar" [hidden]="config.scrollbar === false"></div>
+                <div class="swiper-pagination" [hidden]="config.pagination === false"></div>
+      
+                <div class="swiper-button-prev" [hidden]="config.navigation === false"></div>
+                <div class="swiper-button-next" [hidden]="config.navigation === false"></div>
+              </div>
+            </div>
+
+            <small-card></small-card>
+            
+            <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+                <mat-card class="t"> <h3>MY EASY PRODUCTS</h3> <div class="bar"></div></mat-card>       
+                <mat-card class="it"><swiper *ngIf="type == 'component' && show" class="swiper-container" fxFlex="auto" [config]="config" [disabled]="disabled" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                      <div *ngFor="let slide of slides" class="swiper-slide">
+                     <mat-card class="item mat-elevation-z4">   
+                        <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                              <img class="img-item" mat-card-image src="../../assets/img/second.png" alt="Photo of this book">
+                              <mat-card-content class="subtitle-item">
+                                <p>
+                                  Special book
+                                </p>
+                                <b>$26.3</b><br/>
+                                <div class="stars">
+                                </div>
+                              </mat-card-content>  
+                        </div>
+                    </mat-card>  
+                      </div>
+                    </swiper></mat-card>
+            
+                    <div *ngIf="type == 'directive' && show" class="swiper-container" [disabled]="disabled" [swiper]="config" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+                      <div class="swiper-wrapper">
+                        <div *ngFor="let slide of slides" class="swiper-slide">
+                         <mat-card class="item">   
+                          <div fxLayout="column" fxLayoutAlign="center center" fxFlexFill>
+                            {{slide}}
+                          </div>
+                          </mat-card>
+                        </div>
+                      </div>
+            
+                      <div class="swiper-scrollbar" [hidden]="config.scrollbar === false"></div>
+                      <div class="swiper-pagination" [hidden]="config.pagination === false"></div>
+            
+                      <div class="swiper-button-prev" [hidden]="config.navigation === false"></div>
+                      <div class="swiper-button-next" [hidden]="config.navigation === false"></div>
+                    </div>
+                  </div>
+
+                  <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+                      <mat-card class="t"> <h3>RECOMMENDATIONS FOR YOU</h3> <div class="bar"></div></mat-card>             

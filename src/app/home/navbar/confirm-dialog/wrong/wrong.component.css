@@ -1,0 +1,24 @@
+.success{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#b12727;
+    color: white;
+    position: relative;
+    left: -17px;
+    top: -9px;
+    width:99%;
+    height: 98%;
+}
+.check{
+    font-size:50px;
+    font-weight: bolder;
+    margin-right:1%;
+    margin-top: -25px;
+}
+.message-s{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+}

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+	
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #eeeeee;overflow-x:hidden ; }
+.background .mat-dialog-container{
+    background-image: url(./assets/img/ov/overlay2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #e35317;
+}
+.img-slider{
+    background-size: contain;
+}

@@ -1,0 +1,27 @@
+.row{
+    display: flex;
+    margin-left: 3.7rem;
+    margin-right:3.7rem;
+}
+
+.product{
+    display: flex;
+}
+.stack{
+    display: flex;
+}
+.black-wall{
+    height: 160px;
+    padding: 2%;
+    background-color:black;
+    color:white;
+    width:22%;
+    text-align: center;
+}
+countdown{
+    color:black;
+    padding:2%;
+    background-color:white;
+    font-size:20px;
+    text-align: center;
+}

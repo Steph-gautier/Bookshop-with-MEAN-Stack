@@ -1,0 +1,8 @@
+<mat-card>
+    <img src="../../../../assets/img/bags/violet.jpeg" style="height:120px">
+    <div style="text-align: center;">
+        <small style="font-size: 15px;">{{selfProduct.Name}}</small><br/>
+        <b>${{selfProduct.UnitPrice}}</b>
+    </div>    
+    <button mat-raised-button style="color: white;" (click)="addtoCart(selfProduct)"><mat-icon>add_shopping_cart</mat-icon>Add to cart</button>
+</mat-card>

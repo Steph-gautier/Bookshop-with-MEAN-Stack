@@ -1,0 +1,56 @@
+swiper{
+    width:25rem;
+    margin-left: 0rem;
+}
+.img-slider{
+    height: 30rem;
+    cursor: zoom-in;
+    background-size: cover;
+}
+.dtitle{
+    margin-top:4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.item{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    font-weight: normal;
+    display: inline-flex;
+}
+.description{
+    margin-left: 6rem;
+    width:30rem;
+    font-weight: inherit;
+}
+.stars{
+    padding-left: 33%;
+}
+.gold{
+    color: rgb(253, 191, 33);
+}
+
+.slider{
+    width: 100%;
+}
+.ctext{
+    padding-left: 33%;
+}
+.buy{
+    background-color: #ff8c09;
+    color:white;
+    margin-left: 12%;
+}
+.add{
+    border-color:#ff8c09 ;
+    color:#ff8c09;
+    margin-left: 25%;
+}
+.tab-infos{
+    margin-top: 2.3rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}

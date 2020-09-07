@@ -1,0 +1,44 @@
+.swiper-container{
+    height: 17rem;
+    width: 77rem;
+}
+.content-container{
+    margin-bottom:1%;
+}
+.item{
+    background-color:white;
+    color:black;
+    height: 15rem;
+    width:11.9rem;
+    
+}
+.t{
+    color: black;
+    font-weight: 900;
+    margin-left: 3.7rem;
+    margin-right: 3.7rem;
+    margin-top:1rem;
+    display: flex;
+}
+.bar{
+    width:70%;
+    background-color:rgba(194, 187, 187, 0.288);
+    height: 5px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.it{
+    margin-left: 3.7rem;
+    margin-right: 3.7rem;
+}
+
+.subtitle-item{
+    text-align:center;
+}
+.img-item{
+    height: 10rem;
+}
+.stars{
+    display: inline-flex;
+    color:goldenrod;
+}
